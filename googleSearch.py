@@ -5,8 +5,6 @@ from langchain.utilities import GoogleSearchAPIWrapper
 from langchain.agents import initialize_agent, Tool
 from langchain.agents import AgentType
 
-from chains import chain_create
-
 load_dotenv()
 
 os.environ['OPENAI_API_KEY'] = os.environ.get('OPENAI_API_KEY')

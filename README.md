@@ -38,6 +38,8 @@ Make sure to create a `.env` file in the root of the project and add your keys:
 ```env
 OPENAI_API_KEY=your-api-key-goes-here
 ACTIVELOOP_TOKEN=your-token-goes-here
+GOOGLE_API_KEY=your-google-api-key
+GOOGLE_CSE_ID=your-google-cse-id
 ```
 
 ## Running Examples
@@ -93,6 +95,17 @@ This example demonstrates how to create and interact with a Deep Lake dataset us
 ```python deepLakeDataset.py```
 
 The program will output the answer to the provided question based on the created Deep Lake dataset.
+
+### Example 5: googleSearch.py
+#### Description:
+This example demonstrates how to perform a Google search using langChain's GoogleSearchAPIWrapper. It creates an agent that utilizes Google search as a tool to answer questions about current events.
+
+#### How to Run:
+- Set up the environment variables as described above.
+- Run the following command in your terminal:
+``` python googleSearch.py ```
+
+The program will output the search results based on the provided query.
 
 
 ## Contributing
